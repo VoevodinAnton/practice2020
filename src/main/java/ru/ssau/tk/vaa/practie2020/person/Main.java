@@ -12,5 +12,10 @@ public class Main extends Person {
         number2.setFirstName("Pavel");
         number2.setLastName("Ivanov");
         number2.setPassportID(6789);
+
+        Person number3 = new Person("Kirill","Petrov", 2468);
+        Person number4 = new Person("Vika","Semenova");
+        Person number5 = new Person(1357);
+        Person number6 = new Person();
     }
 }

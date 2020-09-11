@@ -1,4 +1,4 @@
-package ru.ssau.tk.vaa.practie2020;
+package ru.ssau.tk.vaa.practie2020.HelloWorld;
 
 public class HelloWorld {
 

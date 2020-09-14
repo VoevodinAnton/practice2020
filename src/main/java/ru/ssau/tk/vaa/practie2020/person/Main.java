@@ -13,8 +13,8 @@ public class Main extends Person {
         pavel.setLastName("Ivanov");
         pavel.setPassportID(6789);
 
-        Person kirill = new Person("Kirill","Petrov", 2468);
-        Person vika = new Person("Vika","Semenova");
+        Person kirill = new Person("Kirill", "Petrov", 2468);
+        Person vika = new Person("Vika", "Semenova");
         Person misha = new Person(1357);
         Person sonya = new Person();
     }

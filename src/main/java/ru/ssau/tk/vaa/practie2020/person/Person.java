@@ -5,15 +5,15 @@ public class Person {
     private String lastName;
     private int passportID;
 
-    public Person (){
+    public Person() {
     }
 
-    public Person(String firstName, String lastName){
+    public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public Person(int passportID){
+    public Person(int passportID) {
         this.passportID = passportID;
     }
 
@@ -22,7 +22,6 @@ public class Person {
         this.lastName = lastName;
         this.passportID = passportID;
     }
-
 
 
     public void setFirstName(String firstName) {

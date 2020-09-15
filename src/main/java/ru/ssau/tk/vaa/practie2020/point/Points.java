@@ -23,4 +23,8 @@ public class Points {
         }
         return new Point(a.x / b.x, a.y / b.y, a.z / b.z);
     }
+
+    public static Point enlarge(Point a, double number) {
+        return new Point(a.x * number, a.y * number, a.z * number);
+    }
 }

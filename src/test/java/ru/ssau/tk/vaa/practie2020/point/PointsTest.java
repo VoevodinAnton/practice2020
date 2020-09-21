@@ -52,8 +52,8 @@ public class PointsTest {
     public void testMultiply() {
         Point point1 = new Point(1.1, 3.4, 2.6);
         Point point2 = new Point(3.6, 1.2, 2.3);
-        Point resultsTest = Points.multiply(point1,point2);
-        Point results = new Point(3.96,4.08,5.98);
+        Point resultsTest = Points.multiply(point1, point2);
+        Point results = new Point(3.96, 4.08, 5.98);
 
         assertTrue(equalsApproximately(results, resultsTest));
     }
@@ -62,26 +62,58 @@ public class PointsTest {
     public void testDivide() {
         Point point1 = new Point(1.0, 2.0, 3.0);
         Point point2 = new Point(3.0, 3.0, 6.0);
-        Point resultsTest = Points.divide(point1,point2);
+        Point resultsTest = Points.divide(point1, point2);
         Point results = new Point(0.3333333, 0.6666666, 0.5);
 
-        assertTrue(equalsApproximately(results,resultsTest));
+        assertTrue(equalsApproximately(results, resultsTest));
 
     }
 
     @Test
     public void testEnlarge() {
+        Point point1 = new Point(1.4, 1.1, 2.3);
+        double x = 10;
+        Point resultsTest = Points.enlarge(point1, x);
+        Point results = new Point(14, 11, 23);
+
+        assertTrue(equalsApproximately(results, resultsTest));
     }
 
     @Test
     public void testOpposite() {
+        Point point1 = new Point(2.1, 4.5, 3.9);
+        Point resultTest = Points.opposite(point1);
+        Point result = new Point(-2.1, 1.1, 2.3);
+
+        assertTrue(equalsApproximately(result, resultTest));
     }
 
     @Test
     public void testInverse() {
+        Point point1 = new Point(4.3, 1.8, 2.5);
+        Point resultsTest = Points.inverse(point1);
+        Point result = new Point(1 / 4.3, 1 / 1.8, 1 / 2.5);
+
+        assertTrue(equalsApproximately(result, resultsTest));
     }
 
     @Test
     public void testScalarProduct() {
+        Point point1 = new Point(1.8, 3.4, 5.5);
+        Point point2 = new Point(2.4, 1.6, 3.1);
+        double resultsTest = Points.scalarProduct(point1, point2);
+        double results = 26.81;
+
+        assertTrue(equalsApproximately(results, resultsTest));
+    }
+
+    @Test
+    public void testVectorProduct() {
+        Point point1 = new Point(1.4, 1.9, 5.6);
+        Point point2 = new Point(1.9, 6.3, 3.4);
+        Point resultsTest = Points.vectorProduct(point1, point2);
+        Point results = new Point(-28.82, 5.88, 5.21);
+
+        assertTrue(equalsApproximately(results, resultsTest));
     }
 }

@@ -41,6 +41,6 @@ public class Points {
     }
 
     public static Point vectorProduct(Point a, Point b) {
-        return new Point(a.y * b.z - a.z * b.y, -(a.x * b.z - a.z * b.x), a.x * b.y - a.y * b.z);
+        return new Point(a.y * b.z - a.z * b.y, -(a.x * b.z - a.z * b.x), a.x * b.y - a.y * b.x);
     }
 }

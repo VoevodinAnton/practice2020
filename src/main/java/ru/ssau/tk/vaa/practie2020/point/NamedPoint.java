@@ -7,12 +7,12 @@ public class NamedPoint extends Point {
         super(x, y, z);
     }
 
-    public NamedPoint(){
-        this(0,0,0, "Origin");
+    public NamedPoint() {
+        this(0, 0, 0, "Origin");
     }
 
     public NamedPoint(double x, double y, double z, String name) {
-        super(x,y,z);
+        super(x, y, z);
         this.name = name;
     }
 

@@ -7,6 +7,6 @@ public class ResettableIntGenerator extends IntGeneratorImpl implements IntGener
     }
 
     public void reset() {
-
+        super.counter = 0;
     }
 }

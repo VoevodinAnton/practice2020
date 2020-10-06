@@ -24,7 +24,7 @@ public class Person {
         this.passportID = passportID;
     }
 
-    public Person(String firstName, String lastName, int passportID, Gender gender){
+    public Person(String firstName, String lastName, int passportID, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.passportID = passportID;

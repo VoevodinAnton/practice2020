@@ -38,7 +38,7 @@ public class PersonTest {
     }
 
     @Test
-    public void testGender(){
+    public void testGender() {
         Person person1 = new Person();
 
         person1.setGender(Gender.MALE);

@@ -6,7 +6,7 @@ import static org.testng.Assert.*;
 
 public class IdenticalOperationTest {
     @Test
-    public void applyTest(){
+    public void applyTest() {
         IdenticalOperation operator = new IdenticalOperation();
 
         assertEquals(operator.apply(3.1), 3.1);
@@ -16,7 +16,7 @@ public class IdenticalOperationTest {
     }
 
     @Test
-    public void applyInfinityTest(){
+    public void applyInfinityTest() {
         IdenticalOperation operator = new IdenticalOperation();
         double TestPositiveInf = operator.apply(Double.POSITIVE_INFINITY);
         double TestNegativeInf = operator.apply(Double.NEGATIVE_INFINITY);
@@ -26,7 +26,7 @@ public class IdenticalOperationTest {
     }
 
     @Test
-    public void applyNanTest(){
+    public void applyNanTest() {
         IdenticalOperation operator = new IdenticalOperation();
         double TestNan = operator.apply(Double.NaN);
 
@@ -34,12 +34,12 @@ public class IdenticalOperationTest {
     }
 
     @Test
-    public void applyTripleTest(){
+    public void applyTripleTest() {
         IdenticalOperation operator = new IdenticalOperation();
 
-        assertEquals(operator.applyTriple(3),3.0);
-        assertEquals(operator.applyTriple(-10),-10.0);
-        assertEquals(operator.applyTriple(0),0.0);
+        assertEquals(operator.applyTriple(3), 3.0);
+        assertEquals(operator.applyTriple(-10), -10.0);
+        assertEquals(operator.applyTriple(0), 0.0);
     }
 
 }

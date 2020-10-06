@@ -17,21 +17,21 @@ public class TangentOperatorTest {
     }
 
     @Test
-    public void applyInfinityTest(){
+    public void applyInfinityTest() {
         TangentOperator operator = new TangentOperator();
 
-        assertEquals(operator.apply(Math.PI/2), 1.633123935319537E16);
-        assertEquals(operator.apply(-Math.PI/2), -1.633123935319537E16);
+        assertEquals(operator.apply(Math.PI / 2), 1.633123935319537E16);
+        assertEquals(operator.apply(-Math.PI / 2), -1.633123935319537E16);
     }
 
-    public void applyNanTest(){
+    public void applyNanTest() {
         TangentOperator operator = new TangentOperator();
 
         assertTrue(Double.isNaN(operator.apply(Double.NaN)));
     }
 
     @Test
-    public void applyTripleTest(){
+    public void applyTripleTest() {
         TangentOperator operator = new TangentOperator();
 
         assertEquals(operator.applyTriple(Math.PI), 0.0, ACCURACY);
